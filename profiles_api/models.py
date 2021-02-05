@@ -24,7 +24,7 @@ class UserProfileManager(BaseUserManager):
 
         return user
 
-    def create_super_user(self, email, name, password):
+    def create_superuser(self, email, name, password):
         """
         Create a new superuser
         """
@@ -58,7 +58,7 @@ class UserProfile(AbstractBaseUser, PermissionsMixin):
         """
         return self.name
 
-    def get_short_name(string):
+    def get_short_name(self):
         """
         Retrieve short name of user
         """
